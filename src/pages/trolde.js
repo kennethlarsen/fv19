@@ -16,7 +16,9 @@ class TroldeIndex extends React.Component {
          <h1>Vores troldekartotek</h1>
 
           Vigtigt: Læs vores artikel om hvordan vi definerer en "trold": 
-          <Link to={`/blog/hvordan-definerer-vi-en-trold`}>Hvordan definerer vi en trold?</Link>
+          <Link to={`/blog/Velkommen%20til%20trollefanger-projektet.`}>Hvordan definerer vi en trold?</Link>
+          <br>
+          Følgende liste er profiler, vi stærkt mistænker for at være oprettet gennem et botnet og/eller har som formål at skabe splid i den offentlige debat.
           <hr/>
           <ul class="trolls-list">
             {trolls.map(({ node }) => {
