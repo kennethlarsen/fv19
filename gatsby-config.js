@@ -19,9 +19,10 @@ if (!spaceId || !accessToken) {
   )
 }
 
+
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Contentful starter',
+    title: 'fv19',
   },
   pathPrefix: '/',
   plugins: [
@@ -32,6 +33,12 @@ module.exports = {
     {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
-    }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-140064185-1"
+      },
+    },
   ],
 }
